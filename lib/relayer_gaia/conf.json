@@ -1,0 +1,22 @@
+{
+    "cosmos_rpc_addr": "http://0.0.0.0:26650",
+    "cosmos_wallet": "/data/cosmos-relayer-gaia/cosmos_key",
+    "cosmos_wallet_pwd": "12345678",
+    "cosmos_start_height": 0,
+    "cosmos_listen_interval": 1,
+    "cosmos_chain_id": "cc-cosmos",
+    "cosmos_gas_price": "0.00001stake",
+    "cosmos_gas": 200000,
+
+    "poly_rpc_addr": "http://0.0.0.0:40336",
+    "poly_wallet": "/data/cosmos-relayer-gaia/wallet.dat",
+    "poly_wallet_pwd": "4cUYqGj2yib718E7ZmGQc",
+    "poly_start_height": 0,
+    "poly_listen_interval": 1,
+    "poly_to_cosmos_key": "makeProof",
+
+    "side_chain_id": 5,
+    "db_path": "/data/cosmos-relayer-gaia/db",
+    "confirm_timeout": 300,
+    "log_level": 0
+}

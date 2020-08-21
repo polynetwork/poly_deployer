@@ -1,0 +1,14 @@
+{
+  "AliaJsonRpcAddress": "http://0.0.0.0:40336",
+  "SideJsonRpcAddress": "http://0.0.0.0:20336",
+  "SideChainID": 3,
+  "AliaWalletFile": "/data/poly_deployer_linux/lib/poly/wallet.dat",
+  "SideWalletFile": "/data/poly_deployer_linux/lib/ontology/wallet.dat",
+  "DBPath": "/data/poly_deployer_linux/data/ontology/relayer/",
+  "ScanInterval": 1,
+  "RetryInterval": 1,
+  "GasPrice": 0,
+  "GasLimit": 200000,
+  "SideToAlliForceSyncHeight": 0,
+  "AlliToSideForceSyncHeight": 0
+}

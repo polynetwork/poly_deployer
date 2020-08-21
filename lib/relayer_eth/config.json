@@ -1,0 +1,20 @@
+{
+  "PolyConfig": {
+    "RestURL": "http://0.0.0.0:40336",
+    "EntranceContractAddress": "0300000000000000000000000000000000000000",
+    "WalletFile": "/data/poly_deployer_linux/lib/poly/wallet.dat",
+    "WalletPwd": "4cUYqGj2yib718E7ZmGQc"
+  },
+  "ETHConfig": {
+    "RestURL": "http://0.0.0.0:8545",
+    "ECCMContractAddress": "0xBeD03e2F33030B36563BAcFFb918d941f1588DCa",
+    "ECCDContractAddress": "0x4c429B91bc025F11dF956d7692baC4Ccc3B83917",
+    "KeyStorePath": "./capital-owners",
+    "KeyStorePwdSet": {
+      "0xb7ee265d94446f465dba65002a9960d4bef9dca7": "123"
+    },
+    "BlockConfig": 12
+  },
+  "BoltDbPath": "/data/poly_deployer_linux/data/eth/relayer/boltdb",
+  "RoutineNum": 64
+}
