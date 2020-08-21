@@ -1,0 +1,19 @@
+{
+  "PolyJsonRpcAddress": "http://0.0.0.0:40336",
+  "WalletFile": "/data/poly_deployer_linux/lib/poly/wallet.dat",
+  "WalletPwd": "4cUYqGj2yib718E7ZmGQc",
+  "BtcWalletPwd": "123",
+  "PolyObLoopWaitTime": 2,
+  "BtcPrivkFile": "",
+  "WatchingKeyToSign": "makeBtcTx",
+  "ConfigBitcoinNet": "regtest",
+  "ConfigDBPath": "/data/poly_deployer_linux/data/btc/vendor/",
+  "RestPort": 50071,
+  "SleepTime": 10,
+  "CircleToSaveHeight": 300,
+  "Redeem": "",
+  "SignerAddr": "",
+  "ObServerAddr": "",
+  "PolyStartHeight": 1,
+  "WebServerPort": "8080"
+}

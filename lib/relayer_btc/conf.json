@@ -1,0 +1,29 @@
+{
+  "btc_ob_conf": {
+    "net_type": "regtest",
+    "btc_ob_loop_wait_time": 1,
+    "btc_ob_confirmations": 1,
+    "btc_json_rpc_address": "http://0.0.0.0:18443",
+    "user": "test",
+    "pwd": "test",
+    "start_height": 0
+  },
+  "poly_ob_conf": {
+    "poly_json_rpc_address": "http://0.0.0.0:40336",
+    "poly_ob_loop_wait_time": 5,
+    "watching_key": "btcTxToRelay",
+    "wallet_file": "/data/poly_deployer_linux/lib/poly/wallet.dat",
+    "wallet_pwd": "4cUYqGj2yib718E7ZmGQc",
+    "net_type": "regtest",
+    "waiting_cycle": 300
+  },
+  "retry_duration": 10,
+  "retry_times": 0,
+  "retry_db_path": "/data/poly_deployer_linux/data/btc/relayer/db",
+  "log_level": 0,
+  "sleep_time": 10,
+  "max_read_size": 5000000,
+  "retry_cci_dura": 30,
+  "send_headers_dura": 5,
+  "tx_time_out": 60
+}

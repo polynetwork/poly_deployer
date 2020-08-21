@@ -1,0 +1,37 @@
+{
+    "SeedList": [
+        "localhost:20338",
+        "localhost:20238",
+        "localhost:20138",
+        "localhost:20038",
+        "localhost:19938",
+        "localhost:19838",
+        "localhost:19738"
+    ],
+    "ConsensusType":"vbft",
+    "VBFT":{
+        "n":7,
+        "c":2,
+        "k":7,
+        "l":112,
+        "init_txid": 0,
+        "genesis_timestamp": 0,
+        "block_msg_delay":10000,
+        "hash_msg_delay":10000,
+        "peer_handshake_timeout":10,
+        "max_block_change_view":10000,
+        "admin_ont_id":"did:ont:AdzZ2VKufdJWeB8t9a8biXoHbbMe2kZeyH",
+        "min_init_stake":10000,
+        "vrf_value":"1c9810aa9822e511d5804a9c4db9dd08497c31087b0daafa34d768a3253441fa20515e2f30f81741102af0ca3cefc4818fef16adb825fbaa8cad78647f3afb590e",
+        "vrf_proof":"c57741f934042cb8d8b087b44b161db56fc3ffd4ffb675d36cd09f83935be853d8729f3f5298d12d6fd28d45dde515a4b9d7f67682d182ba5118abf451ff1988",
+        "peers":[
+            { "index":1, "peerPubkey":"03b3c57c7c96e56640314635b9e7af52f2c412ca57c88d84d34e1c286deeb1f658", "address":"AdzZ2VKufdJWeB8t9a8biXoHbbMe2kZeyH", "initPos":20000 },
+            { "index":2, "peerPubkey":"03751009f4d9195d514562792135b4910435b5dbe95a54d94b7b24e78036db4749", "address":"Ad5i2T3Ra8CTreCjF9Z2tY6hyDWUUwS9ZN", "initPos":20000 },
+            { "index":3, "peerPubkey":"024b450756ae7f53e22a76572b8af5799b74e9683daa3bae6f5ff5637239e8d8a5", "address":"APsD4gj7nZDRTvL1rqLB7KLR1LAy2cpHzW", "initPos":20000 },
+            { "index":4, "peerPubkey":"024477ccaf30ed561008a08cb49efb72a3be3d2a6fa552da8141be3a5499674622", "address":"AGja5ttQsMRSnqXTquqLxBQiJ3rjCqEz1s", "initPos":20000 },
+            { "index":5, "peerPubkey":"02b737a9542ec53b3d20e39b5e5b066708eb223abb2a30a8bac13e5dd1e307d2ee", "address":"ASfhYsxk2spmhZvykNq3EWn76Wr93D71gj", "initPos":20000 },
+            { "index":6, "peerPubkey":"027aba246e16a3e290caf92d30f80325c79c04beff5f54465088ac7289fd26d56b", "address":"AMjxRzq1dZTvfX6QPMokzEosvT1AvbwWCc", "initPos":20000 },
+            { "index":7, "peerPubkey":"02fafa779de07b5f2d234c1b307abba02cb795aa5ce62744195359c057a3b5e96c", "address":"ALJacku3BuneFY2tj7jZGGF9MWqoAN864n", "initPos":20000 }
+        ]
+    }
+} 
