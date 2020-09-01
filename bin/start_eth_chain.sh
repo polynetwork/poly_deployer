@@ -40,7 +40,7 @@ then
     echo "${LOG_PREFIX}failed to start eth chain"
     exit 1
 else
-    echo "${LOG_PREFIX}successful to start eth chain: ( rpc address: http://0.0.0.0:8575, coinbase address: 0x5cD3143f91a13Fe971043E1e4605C1c23b46bF44 )"
+    echo "${LOG_PREFIX}successful to start eth chain: ( rpc address: http://0.0.0.0:8545, coinbase address: 0x5cD3143f91a13Fe971043E1e4605C1c23b46bF44 )"
 fi
 
 pip3 show web3 >> /dev/null
@@ -99,7 +99,17 @@ then
     fi
 fi
 
-relayer_addr=`cat ${POLY_HOME}/lib/relayer_eth/config.json | jq .ETHConfig.Signer`
+while true 
+do
+    lsof -i tcp:18443 | grep LISTEN > /dev/null
+    if [ $? -eq 0 ]
+    then
+        break
+    fi
+    sleep 1
+done
+
+relayer_addr="0xB7Ee265D94446F465dba65002A9960D4bef9dca7"
 python3 ${POLY_HOME}/lib/geth/init_account.py ${POLY_HOME}/lib/geth/private_key ${relayer_addr}
  
 echo "${BORDER} start eth chain done ${BORDER}"

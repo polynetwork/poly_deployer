@@ -4,6 +4,16 @@ bin=`cd "$bin"; pwd`
 POLY_HOME=`cd "$bin"/..; pwd`
 LOG_PREFIX="---------------------BUILDING: "
 
+# commits
+export POLY_CMT=8083385c9933af59c22f64042cc4850181045096
+export ONT_RELAYER=04a071ce01f98678fe1e9b75e3ac73b43301fba6
+export ETH_RELAYER=84d43bdd64f60f7278a02a85454941b9aef10674
+export BTC_RELAYER=c0f8dde8d4cb6c18becd6070382113d36fa56794
+export BTC_VENDOR=3b19a5fd76664a7d7c811956f582effcf937810f
+export GAIA_DEMO=d7bdccddca7b01efeabeaa5a7adbacfe75732001
+export COSMOS_RELAYER=2287164b4bd99a175dd6e7a90c848173d850ea38
+export TEST_CMT=8cf514b0775052939ea0e69bf19e90f135ecb612
+
 # install tools 
 if [ ! -x "$(command -v expect)" ]
 then
@@ -110,6 +120,7 @@ then
     git clone https://github.com/polynetwork/poly.git
 fi
 cd poly
+git reset --hard $POLY_CMT
 make
 if [ $? -ne 0 ]
 then
@@ -123,9 +134,10 @@ echo "${LOG_PREFIX}poly built"
 cd ${POLY_HOME}/.code/
 if [ ! -d ./gaia-demo ]
 then
-    git clone https://github.com/polynetwork/gaia-demo.git
+    git clone https://github.com/skyinglyh1/gaia-demo.git
 fi
 cd gaia-demo/cmd/gaiad/
+git reset --hard $GAIA_DEMO
 go build
 if [ $? -ne 0 ]
 then
@@ -182,6 +194,7 @@ then
     git clone https://github.com/polynetwork/btc-relayer.git
 fi
 cd btc-relayer/cmd
+git reset --hard $BTC_RELAYER
 go build -o run_btc_relayer run.go
 if [ $? -ne 0 ]
 then
@@ -198,6 +211,7 @@ then
     git clone https://github.com/polynetwork/eth-relayer.git
 fi
 cd eth-relayer
+git reset --hard $ETH_RELAYER
 go build -o run_eth_relayer main.go
 if [ $? -ne 0 ]
 then
@@ -214,6 +228,7 @@ then
     git clone https://github.com/polynetwork/ont-relayer.git
 fi
 cd ont-relayer
+git reset --hard $ONT_RELAYER
 go build -o run_ont_relayer main.go
 if [ $? -ne 0 ]
 then
@@ -230,6 +245,7 @@ then
     git clone https://github.com/polynetwork/cosmos-relayer.git
 fi
 cd cosmos-relayer
+git reset --hard $COSMOS_RELAYER
 go build -o run_gaia_relayer cmd/run.go
 if [ $? -ne 0 ]
 then
@@ -242,6 +258,7 @@ echo "${LOG_PREFIX}gaia relayer built"
 # btc vendors
 cd ${POLY_HOME}/.code/polynetwork
 cd btc-vendor-tools
+git reset --hard $BTC_VENDOR
 go build -o run_vendor cmd/run.go
 if [ $? -ne 0 ]
 then
@@ -258,6 +275,7 @@ then
     git clone https://github.com/polynetwork/poly-io-test.git
 fi
 cd poly-io-test
+git reset --hard $TEST_CMT
 go build -o btc_prepare cmd/btc_prepare/run.go
 if [ $? -ne 0 ]
 then

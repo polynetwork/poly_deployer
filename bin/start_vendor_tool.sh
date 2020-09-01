@@ -14,7 +14,7 @@ fi
 
 for num in 1 2 3
 do
-    pid=`ps -ewf | grep ${POLY_HOME}.*run_vendor | grep -v grep | awk '{print $2}'`
+    pid=`ps -ewf | grep ${POLY_HOME}.*run_vendor.*vendor_tool.json_${num} | grep -v grep | awk '{print $2}'`
     if [ -n "$pid" ]
     then
         echo "${LOG_PREFIX}vendor_tool_${num} already start"

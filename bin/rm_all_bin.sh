@@ -16,4 +16,4 @@ rm -rf ${POLY_HOME}/lib/poly/poly
 # relayers
 rm -rf ${POLY_HOME}/lib/relayer_btc/run_btc_relayer ${POLY_HOME}/lib/relayer_eth/run_eth_relayer ${POLY_HOME}/lib/relayer_ont/run_ont_relayer ${POLY_HOME}/lib/relayer_gaia/run_gaia_relayer
 # tools
-rm -rf ${POLY_HOME}/lib/tools/contracts_deployer/btc_prepare ${POLY_HOME}/lib/tools/contracts_deployer/cosmos_prepare ${POLY_HOME}/lib/tools/contracts_deployer/eth_deployer ${POLY_HOME}/lib/tools/contracts_deployer/ont_deployer ${POLY_HOME}/lib/tools/side_chain_mgr/side_chain_mgr ${POLY_HOME}/lib/tools/test_tool/cctest ${POLY_HOME}/lib/tools/btctool ${POLY_HOME}/lib/vendor_tool/run_vendor
+rm -rf ${POLY_HOME}/lib/tools/contracts_deployer/btc_prepare ${POLY_HOME}/lib/tools/contracts_deployer/cosmos_prepare ${POLY_HOME}/lib/tools/contracts_deployer/eth_deployer ${POLY_HOME}/lib/tools/contracts_deployer/ont_deployer ${POLY_HOME}/lib/tools/side_chain_mgr ${POLY_HOME}/lib/tools/test_tool/cctest ${POLY_HOME}/lib/tools/btctool ${POLY_HOME}/lib/vendor_tool/run_vendor
