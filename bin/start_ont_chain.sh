@@ -95,12 +95,5 @@ do
     sleep 1
 done
 
-echo "${LOG_PREFIX}init ont account"
-${POLY_HOME}/lib/tools/side_chain_mgr/side_chain_mgr -tool init_ont_acc -conf ${POLY_HOME}/lib/tools/config.json -owallets "${POLY_HOME}/lib/ontology/wallet.dat,${POLY_HOME}/lib/ontology/wallet1.dat,${POLY_HOME}/lib/ontology/wallet2.dat,${POLY_HOME}/lib/ontology/wallet3.dat,${POLY_HOME}/lib/ontology/wallet4.dat,${POLY_HOME}/lib/ontology/wallet5.dat,${POLY_HOME}/lib/ontology/wallet6.dat" -opwds "admin,123,123,123,123,123,123"
-if [ $? -ne 0 ]
-then
-    echo "${LOG_PREFIX}failed to init ont account"
-fi
-
 echo "${BORDER} done ${BORDER}"
 echo

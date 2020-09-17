@@ -10,7 +10,7 @@ echo "${BORDER} start btc chain ${BORDER}"
 
 if [ ! -d ${POLY_HOME}/log/btc ]
 then
-    mkdir ${POLY_HOME}/log/btc
+    mkdir -p ${POLY_HOME}/log/btc
 fi
 
 if [ ! -d ${POLY_HOME}/data/btc/chain ]

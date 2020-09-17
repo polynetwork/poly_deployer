@@ -22,7 +22,9 @@ then
     mkdir -p ${POLY_HOME}/log/ontology/relayer
 fi
 
-${POLY_HOME}/lib/relayer_ont/run_ont_relayer --cliconfig ${POLY_HOME}/lib/relayer_ont/config.json -alliapwd 4cUYqGj2yib718E7ZmGQc -ontpwd admin >> ${POLY_HOME}/log/ontology/relayer.log 2>&1 &
+${POLY_HOME}/lib/relayer_ont/run_ont_relayer --cliconfig ${POLY_HOME}/lib/relayer_ont/config.json --logdir ${POLY_HOME}/log/ontology/relayer/ -alliapwd 4cUYqGj2yib718E7ZmGQc -ontpwd admin >> ${POLY_HOME}/log/ontology/relayer.log 2>&1 &
+
+sleep 3
 
 pid=`ps -ewf | grep ${POLY_HOME}.*run_ont_relayer | grep -v grep | awk '{print $2}'`
 if [ ! -n "${pid}" ]

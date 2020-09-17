@@ -55,8 +55,6 @@ else
     echo "${LOG_PREFIX}successful to start poly chain node4: ( rpc address: http://0.0.0.0:40036, coinbase address: ALYo97aXPxB5WcfKohBAkH4QXFUHYHpgEH )"
 fi
 
-
-
 while true 
 do
     lsof -i tcp:40336 > /dev/null

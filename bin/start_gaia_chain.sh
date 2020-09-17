@@ -64,6 +64,16 @@ done
 
 sleep 5
 
+while true 
+do
+    ${POLY_HOME}/lib/gaia/gaiacli query block 0 --chain-id=cc-cosmos --node=tcp://localhost:26650 > /dev/null
+    if [ $? -eq 0 ]
+    then
+        break
+    fi
+    sleep 1
+done
+
 ${POLY_HOME}/bin/gaia_transfer.sh $cosmos_key_pwd cosmos17ud4tm64emwfrlgq0aafhguxajtc7w4gseapra cosmos1nztkr7cvp6cvq4s9apyu4emayw0e3trl68gj3f 10000stake ${POLY_HOME}
 if [ $? -ne 0 ]
 then
