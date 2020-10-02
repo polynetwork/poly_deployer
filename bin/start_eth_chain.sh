@@ -101,7 +101,7 @@ fi
 
 while true 
 do
-    lsof -i tcp:18443 | grep LISTEN > /dev/null
+    lsof -i tcp:8545 | grep LISTEN > /dev/null
     if [ $? -eq 0 ]
     then
         break
